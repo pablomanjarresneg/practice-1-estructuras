@@ -44,6 +44,6 @@ void generateDataset(const string& fileName, const string& outputFile)
 
 int main()
 {
-    generateDataset("words_alpha.txt", "dataset.txt");
+    generateDataset("data/words_alpha.txt", "data/dataset.txt");
     return 0;
 }

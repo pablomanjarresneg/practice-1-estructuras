@@ -1,0 +1,15 @@
+# CMake build directories
+cmake-build-*/
+build/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+
+# CLion IDE files
+.idea/
+
+# Compiled binaries
+*.o
+*.out
+dataset_generator
+practice_1_estructuras
