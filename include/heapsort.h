@@ -1,14 +1,12 @@
-//
-// Created by Pablo Manjarres on 21/03/26.
-//
+#ifdef HEAPSORT_H
+#define  HEAPSORT_H_
 
-#ifndef PRACTICE_1_ESTRUCTURAS_HEAPSORT_H
-#define PRACTICE_1_ESTRUCTURAS_HEAPSORT_H
+#include <vector>
+#include <string>
 
+void heapify(std::vector<stp::string>& arr, int n, int i);
+void buiildHeap(std::vector<std::string>& arr,int n); //Construcción el Max Heap a partir del arreglo
+void heapsort(std::vector<std::string>& arr); // Ordena el arreglo usando HeapSort
 
-class heapsort
-{
-};
+#endif
 
-
-#endif //PRACTICE_1_ESTRUCTURAS_HEAPSORT_H
