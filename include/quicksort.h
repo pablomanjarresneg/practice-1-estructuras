@@ -6,11 +6,9 @@
 #define PRACTICE_1_ESTRUCTURAS_QUICKSORT_H
 
 
-
-class quicksort {
-
+class quicksort
+{
 };
-
 
 
 #endif //PRACTICE_1_ESTRUCTURAS_QUICKSORT_H

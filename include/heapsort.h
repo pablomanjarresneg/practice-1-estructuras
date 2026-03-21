@@ -6,11 +6,9 @@
 #define PRACTICE_1_ESTRUCTURAS_HEAPSORT_H
 
 
-
-class heapsort {
-
+class heapsort
+{
 };
-
 
 
 #endif //PRACTICE_1_ESTRUCTURAS_HEAPSORT_H

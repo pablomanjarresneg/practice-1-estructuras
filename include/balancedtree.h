@@ -6,11 +6,9 @@
 #define PRACTICE_1_ESTRUCTURAS_BALANCEDTREE_H
 
 
-
-class balancedtree {
-
+class balancedtree
+{
 };
-
 
 
 #endif //PRACTICE_1_ESTRUCTURAS_BALANCEDTREE_H
