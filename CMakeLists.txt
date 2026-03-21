@@ -12,4 +12,4 @@ add_executable(practice_1_estructuras
         include/heapsort.h
         src/quicksort.cpp
         include/quicksort.h
-)
+        src/dataset_generator.cpp)
