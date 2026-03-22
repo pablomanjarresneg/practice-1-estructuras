@@ -1,20 +1,17 @@
-//
-// Created by Pablo Manjarres on 21/03/26.
-//
 
 #include "../include/quicksort.h"
 
 #include <utility> //swap
 using namespace std;
 
-void quickSort::quickSort(vector<string>& arr, int low, int high)
+void quicksort::sort(vector<string>& arr)
 {
     if (arr.empty()){ return; }
 
     quickSort(arr, 0, static_cast<int>(arr.size()-1));
 }
 
-void quickSort::quickSort(vector<string>& arr, int low, int high)
+void quicksort::quickSort(vector<string>& arr, int low, int high)
 {
     if (low >= high) { return; }
 

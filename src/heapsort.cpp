@@ -1,7 +1,6 @@
-#include "heapsort.h"
-#include <algorithm>
 #include <vector>
 #include <string>
+#include "../include/heapsort.h"
 using namespace std;
 
 void heapify(vector<string>& arr,int n,int i) {
@@ -42,7 +41,7 @@ void heapsort(vector<string>& arr) {
     buildHeap(arr,n); // construcción del heap
 
     for (int i= n-1; i >0; i--) {
-        swap(arr[0], arr[i]); //Elo mayor se mueve al final
+        swap(arr[0], arr[i]); //El mayor se mueve al final
         heapify(arr,i,0); // Se reorganiza el heap
     }
 }
