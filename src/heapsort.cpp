@@ -1,5 +1,7 @@
 #include "heapsort.h"
 #include <algorithm>
+#include <vector>
+#include <string>
 using namespace std;
 
 void heapify(vector<string>& arr,int n,int i) {
@@ -26,12 +28,15 @@ void heapify(vector<string>& arr,int n,int i) {
     }
 }
 
-void bildHeap(vector<string>& arr, int n) {
-    for (int i=n/2-1)
+void buildheap(vector<string>& arr, int n) {
+    for (int i =n/2 -1; i >=0; i--) {
+        heapify(arr,n,i);
+    }
 }
 
+
 //head Sort: El vector de Strings es odenado alfabeticamente
-void headsort(vectir<string>& arr) {
+void heapsort(vector<string>& arr) {
     int n = arr.size();
 
     buildHeap(arr,n); // construcción del heap
