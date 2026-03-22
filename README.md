@@ -1,7 +1,9 @@
 # Practice I - Sorting Large Dataset (C++)
 
-**ST0245 - Data Structures and Algorithms**
+**ST0245 - Data Structures and Algorithms (S2661-1269)**
 EAFIT University - School of Applied Sciences and Engineering
+
+**Authors:** Pablo Manjarres Negrette, Valentina Barbosa Quilindo
 
 ## Description
 
@@ -41,16 +43,6 @@ This project sorts a dataset of 100,000 English words using three different algo
 mkdir build && cd build
 cmake ..
 make
-```
-
-### Without CMake
-
-```bash
-# Compile dataset generator
-clang++ -std=c++17 -O2 -o dataset_generator src/dataset_generator.cpp
-
-# Compile main program
-clang++ -std=c++17 -O2 -o practice_1_estructuras main.cpp src/quicksort.cpp src/heapsort.cpp src/balancedtree.cpp
 ```
 
 ### Running
