@@ -1,47 +1,40 @@
-#include <vector>
-#include <string>
 #include "../include/heapsort.h"
+#include <utility>
+
 using namespace std;
 
-void heapify(vector<string>& arr,int n,int i) {
-    int largest =i; //raiz
-    int left= 2*i+1; //hijo izquierdo
-    int right= 2*i+2; //hijo derecho
+void heapsort::heapify(vector<string>& arr, int n, int i) {
+    int largest = i;
+    int left = 2 * i + 1;
+    int right = 2 * i + 2;
 
-    //Hijo izquierdo es mayor
-    if (left<n && arr [left]>arr[largest]) {
-        largest=left;
+    if (left < n && arr[left] > arr[largest]) {
+        largest = left;
     }
 
-    //Hijo derecho es mayor
-    if (right<n && arr[right]>arr[largest]) {
-        largest=right;
+    if (right < n && arr[right] > arr[largest]) {
+        largest = right;
     }
 
-    //La raiz no es la mayor
-    if (largest !=1) {
-        swap(arr[i], arr [largest]);
-        //Reorganizar
-        heapify (arr,n,largest);
-
+    if (largest != i) {
+        swap(arr[i], arr[largest]);
+        heapify(arr, n, largest);
     }
 }
 
-void buildheap(vector<string>& arr, int n) {
-    for (int i =n/2 -1; i >=0; i--) {
-        heapify(arr,n,i);
+void heapsort::buildHeap(vector<string>& arr, int n) {
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        heapify(arr, n, i);
     }
 }
 
+void heapsort::sort(vector<string>& arr) {
+    int n = static_cast<int>(arr.size());
 
-//head Sort: El vector de Strings es odenado alfabeticamente
-void heapsort(vector<string>& arr) {
-    int n = arr.size();
+    buildHeap(arr, n);
 
-    buildHeap(arr,n); // construcción del heap
-
-    for (int i= n-1; i >0; i--) {
-        swap(arr[0], arr[i]); //El mayor se mueve al final
-        heapify(arr,i,0); // Se reorganiza el heap
+    for (int i = n - 1; i > 0; i--) {
+        swap(arr[0], arr[i]);
+        heapify(arr, i, 0);
     }
 }
