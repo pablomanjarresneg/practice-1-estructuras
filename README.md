@@ -126,4 +126,4 @@ Although all three algorithms share O(n log n) average complexity, real-world pe
 
 ### Conclusion
 
-For a one-time sort of a static dataset, **QuickSort** is the most appropriate choice due to its speed and low memory usage. **HeapSort** is a solid alternative when worst-case guarantees matter and extra memory is not available. The **AVL Tree** is best suited for scenarios requiring frequent insertions, deletions, and lookups while maintaining sorted order — its overhead makes it less ideal for a pure sorting task.
+For a one-time sort of a static dataset, **QuickSort** is the most appropriate choice due to its speed and low memory usage. **HeapSort** is a solid alternative when worst-case guarantees matter and extra memory is not available. The **AVL Tree** is best suited for scenarios requiring frequent insertions, deletions, and lookups while maintaining sorted order, its overhead makes it less ideal for a pure sorting task.
