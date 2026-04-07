@@ -30,11 +30,11 @@ void generateDataset(const string& inputFile, const string& outputFile) {
 
     int count = min(DATASET_SIZE, static_cast<int>(words.size()));
 
-    ofstream out(outputFile);
+    ofstream out(outputFile); //opens a connection with the outputfile so anything that gets written in out goes to the file and not the console
     for (int i = 0; i < count; i++) {
         out << words[i] << "\n";
     }
-    out.close();
+    out.close(); //close the connection
 
     cout << "dataset.txt created with " << count << " words." << endl;
 }

@@ -16,8 +16,8 @@ struct AVLNode {
 
 class AVLTree {
 public:
-    AVLTree();
-    ~AVLTree();
+    AVLTree(); //constructor
+    ~AVLTree(); //destructor
 
     void insert(const std::string& key);
     void inorder(std::vector<std::string>& result) const;
